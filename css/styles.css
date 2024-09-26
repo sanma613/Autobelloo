@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, div, ul, li, p, h1, h2, h3, section, main, header, footer, article {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0F4F8;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #555C6C;
+}
+
+/* Título principal */
+h1 {
+    font-weight: 700;
+    font-size: 2.6em;
+    color: #2F3C7E;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Wrapper general */
+.section-1 {
+    display: grid;
+    grid-template-areas: 
+    'descripcion descripcion'
+    'marco marco'
+    'objetivos objetivos';
+    gap: 26px;
+    max-width: 1080px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Descripción inicial */
+.descripcion__wrapper {
+    display: flex;
+    gap: 20px;
+    grid-area: descripcion;
+    margin-bottom: 20px;
+}
+
+.descripcion p {
+    color: #555C6C;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* Marco estratégico */
+.marco-estrategico__wrapper {
+    display: grid;
+    grid-template-areas: 
+    'vision mision valores'
+    'img img img';
+    gap: 20px;
+    grid-area: marco;
+    padding: 20px;
+    background-color: #FAF9F6;
+    border-radius: 8px;
+}
+
+/* Secciones Misión, Visión y Valores */
+.mision, .vision, .valores {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision {
+    grid-area: vision;
+}
+
+.mision {
+    grid-area: mision;
+}
+
+.valores {
+    grid-area: valores;
+}
+
+.img-2 {
+    grid-area: img;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Objetivos */
+.objetivos__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    grid-area: objetivos;
+}
+
+.objetivos__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.objetivo__item {
+    list-style: none;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.subtitle {
+    margin-bottom: 12px;
+    font-size: 1.8em;
+    color: #2F3C7E;
+    text-align: center;
+}
+
+.p {
+    text-align: justify;
+    text-wrap: pretty;
+    line-height: 1.7;
+    font-size: 1em;
+    color: #555C6C;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 1.2em;
+}
